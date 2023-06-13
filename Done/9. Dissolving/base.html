@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Dissolving</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG" width="300" height="300">
+                <g transform="scale(2) translate(-75,-75)">
+                    <path id="glass" d="M100,100 l100,0 l-20,100 l-60,0 l-20,-100 Z" fill="rgba(0,0,225,0.2)"/>
+                    <path id="glassInside" d="M100,100 l100,0 l-20,100 l-60,0 l-20,-100 Z" fill="cyan" transform="scale(0.8) translate(37,38)"/>
+
+                    <!-- Bubbles -->
+                    <g fill="white" stroke="black" opacity="0">
+                        <g id="centerBubbles">
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                            </circle>
+                        </g>
+                        <g id="centerLeftBubbles">
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;145;145" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                            </circle>
+                        </g>
+                        <g id="centerRightBubbles">
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="150;150;155;155" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                            </circle>
+                        </g>
+                        <g id="rightBubbles">
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="145;145;160;160" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                            </circle>
+                        </g>
+                        <g id="leftBubbles">
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+0.9s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.0s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.1s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.2s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.3s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.4s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.5s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.6s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.7s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.8s" repeatCount="10"/>
+                            </circle>
+                            <circle cx="150" cy="188" r="1.5">
+                                <animate attributeName="cy" values="188;188;112;112" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                                <animate attributeName="cx" values="155;155;140;140" dur="2s" begin="tabletDropAni.end+1.9s" repeatCount="10"/>
+                            </circle>
+                        </g>
+                        <animate attributeName="opacity" values="0;1" begin="tabletDropAni.begin+1.4s" dur="0.1s" fill="freeze"/>
+                        <animate attributeName="opacity" values="1;0" begin="tabletDropAni.begin+21.5s" dur="0.1s" fill="freeze"/>
+                    </g>
+
+                    <!-- Tablet -->
+                    <circle cx="150" cy="120" r="10" fill="white" stroke="black">
+                        <animate id="tabletDropAni" attributeName="cy" values="120;180" dur="1.5s" begin="0s;tabletDissolveAni.end" fill="freeze"/>
+                        <animate id="tabletDissolveAni" attributeName="r" values="10;0" begin="tabletDropAni.end" dur="20s"/>
+                        <animate attributeName="cy" values="180;190" begin="tabletDropAni.end" dur="20s"/>
+                    </circle>
+
+                    <!-- Cover -->
+                    <path id="glassCover" d="M100,100 l100,0 l-20,100 l-60,0 l-20,-100 Z" fill="rgba(255,255,255,0.5)" stroke="rgba(64,64,64,0.2)"/>
+                </g>
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 10/50 (2023). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

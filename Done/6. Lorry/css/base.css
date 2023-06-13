@@ -1,0 +1,562 @@
+@import url('your url here');
+
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: rgb(71, 100, 165);
+
+}
+
+#mySection{
+
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#placeholder{
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+/* -- */
+
+#background{
+
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    animation: travel 4s linear infinite;
+
+}
+
+#sky{
+
+    position: absolute;
+    width: 200%;
+    height: 45%;
+    top: 0px;
+    left: 0px;
+    background-color: skyblue;
+
+}
+
+#ground{
+
+    position: absolute;
+    width: 200%;
+    height: 55%;
+    top: 45%;
+    left: 0px;
+    background-color: green;
+
+}
+
+#road{
+
+    position: absolute;
+    width: 200%;
+    height: 20%;
+    top: 50%;
+    left: 0;
+    background-color: rgb(65, 65, 65);
+
+}
+
+#objects{
+
+    position: absolute;
+
+}
+
+#objects > div {
+
+    background-color: darkgray;
+    position: absolute;
+    border: 1px solid rgba(64,64,64,0.5);
+    box-shadow: 3px -1px black;
+    box-sizing: border-box;
+
+}
+
+#objects > div:nth-child(1) {
+
+    width: 50px;
+    top: 80px;
+    height: 70px;
+    left: 0px;
+
+}
+
+#objects > div:nth-child(2) {
+
+    width: 50px;
+    top: 70px;
+    height: 80px;
+    left: 70px;
+
+}
+
+#objects > div:nth-child(3) {
+
+    width: 30px;
+    top: 100px;
+    height: 50px;
+    left: 130px;
+
+}
+
+#objects > div:nth-child(4) {
+
+    width: 50px;
+    top: 40px;
+    height: 110px;
+    left: 180px;
+
+}
+
+#objects > div:nth-child(5) {
+
+    width: 70px;
+    top: 60px;
+    height: 90px;
+    left: 240px;
+
+}
+
+#objects > div:nth-child(6) {
+
+    width: 50px;
+    top: 90px;
+    height: 60px;
+    left: 340px;
+
+}
+
+#objects > div:nth-child(7) {
+
+    width: 60px;
+    top: 80px;
+    height: 70px;
+    left: 420px;
+
+}
+
+#objects > div:nth-child(8) {
+
+    width: 50px;
+    top: 80px;
+    height: 70px;
+    left: 500px;
+
+}
+
+#objects > div:nth-child(9) {
+
+    width: 50px;
+    top: 70px;
+    height: 80px;
+    left: 570px;
+
+}
+
+#objects > div:nth-child(10) {
+
+    width: 30px;
+    top: 100px;
+    height: 50px;
+    left: 630px;
+
+}
+
+#objects > div:nth-child(11) {
+
+    width: 50px;
+    top: 40px;
+    height: 110px;
+    left: 680px;
+
+}
+
+#objects > div:nth-child(12) {
+
+    width: 70px;
+    top: 60px;
+    height: 90px;
+    left: 740px;
+
+}
+
+/* -- */
+
+#lorry{
+
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: scale(1.25) translate(0px,10px);
+
+}
+
+#wheels,#wheels > div, #wheels > div > div{
+
+    position: absolute;
+
+}
+
+#wheels{
+
+    left: calc(50% - 15px);
+    top: calc(50%);
+
+}
+
+#wheels > div{
+
+    width: 30px;
+    height: 30px;
+    transform-origin: 50% 50%;
+    animation: wheelSpin 2s linear infinite;
+
+}
+
+#wheels > div:nth-child(1){
+
+    left: 40px;
+    top: 0px;
+
+}
+
+#wheels > div:nth-child(2){
+
+    left: -40px;
+    top: 0px;
+
+}
+
+#wheels > div:nth-child(4){
+
+    left: -40px;
+    top: 0px;
+
+}
+
+.tire{
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+
+}
+
+.outerWheel{
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform-origin: 50% 50%;
+    transform: scale(0.75);
+    border: 3.5px solid grey;
+    box-sizing: border-box;
+
+}   
+
+.innerWheel{
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform-origin: 50% 50%;
+    transform: scale(0.3);
+    background-color: grey;
+
+}   
+
+#wheels > div > div:nth-child(4) > div{
+
+    position: absolute;
+    transform-origin: 50% 0%;
+    width: 2px;
+    height: 10px;
+    left: 14px;
+    top: 15px;
+    background-color: grey;
+
+}
+
+#wheels > div > div:nth-child(4) > div:nth-child(1){
+
+    transform: rotate(0deg);
+
+}
+
+#wheels > div > div:nth-child(4) > div:nth-child(2){
+
+    transform: rotate(60deg);
+
+}
+
+#wheels > div > div:nth-child(4) > div:nth-child(3){
+
+    transform: rotate(120deg);
+
+}
+
+#wheels > div > div:nth-child(4) > div:nth-child(4){
+
+    transform: rotate(180deg);
+
+}
+
+#wheels > div > div:nth-child(4) > div:nth-child(5){
+
+    transform: rotate(240deg);
+
+}
+
+#wheels > div > div:nth-child(4) > div:nth-child(6){
+
+    transform: rotate(300deg);
+
+}
+
+/* -- */
+
+#lorryBottom{
+
+    position: absolute;
+    left: calc(50%);
+    top: calc(50%);
+
+}
+
+#lorryBottom > div{
+
+    background-color: grey;
+    position: absolute;
+    width: 130px;
+    left: -65px;
+    height: 15px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+/* -- */
+
+#lorryBack{
+
+    position: absolute;
+    left: calc(50%);
+    top: calc(50%);
+
+}
+
+#lorryBack > div{
+
+    position: absolute;
+    border-radius: 5px;
+    background-color: gold;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 90px;
+    height: 60px;
+    top: -60px;
+    left: -65px;
+
+}
+
+/* -- */
+
+#lorryFront, #lorryFront > div{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+
+#lorryFront > div:nth-child(1){
+
+    background-color: red;
+    width: 40px;
+    height: 50px;
+    top: -50px;
+    left: 25px;
+    border-radius: 5px 5px 0px 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+#lorryFront > div:nth-child(2){
+
+    background-color: rgba(163, 253, 226, 0.9);
+    width: 40px;
+    height: 30px;
+    top: -50px;
+    left: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transform-origin: 50% 50%;
+    transform: scale(0.75);
+
+}
+
+#lorryFront > div:nth-child(3){
+
+    background-color: rgb(243, 224, 116);
+    width: 10px;
+    height: 10px;
+    top: -12px;
+    left: 55px;
+    border-radius: 1px;
+    border: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+#lorryFront > div:nth-child(4){
+
+    background-color: red;
+    width: 8px;
+    height: 16px;
+    top: -1px;
+    left: 57px;
+    border-radius: 1px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+/* -- */
+
+@keyframes wheelSpin {
+
+    0%{
+
+        transform: rotate(0deg);
+
+    }
+
+    100%{
+
+        transform: rotate(360deg);
+
+    }
+    
+}
+
+@keyframes travel{
+
+    0%{
+
+        transform: translateX(150px);
+
+    }
+
+    100%{
+
+        transform: translateX(-350px);
+
+    }
+
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(28, 68, 143);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(56, 3, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(56, 3, 56);
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 14px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+    box-sizing: border-box;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: rgb(56, 3, 56);
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}

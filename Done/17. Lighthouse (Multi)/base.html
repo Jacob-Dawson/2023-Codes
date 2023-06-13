@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Lighthouse</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <div id="infoSection" class="subSection">
+                <!-- Information about the drawing -->
+                <p>The lighthouse is important to guide ships safely away from a dangerous coast.</p>
+            </div>
+            <div id="selectionSection" class="subSection">
+                <!-- Select which drawing you want to see -->
+                <div>
+                    <p>Select which drawings you want to see</p><br>
+                </div>
+                <div id="selections">
+                    <label for="cssCheck">CSS</label>
+                    <input type="checkbox" id="cssCheck" checked/>
+                    <label for="svgCheck">SVG</label>
+                    <input type="checkbox" id="svgCheck" checked/>
+                    <label for="canvasCheck">Canvas</label>
+                    <input type="checkbox" id="canvasCheck" checked/>
+                    <label for="p5Check">p5</label>
+                    <input type="checkbox" id="p5Check" checked/>
+                </div>
+            </div>
+            <div id="cssSection" class="subSection">
+                <!-- The CSS Section -->
+                <div id="myCSS">
+                    <div id="placeholder">
+                        <div id="background">
+                            <div id="sunset"></div>
+                            <div id="sea"></div>
+                            <div id="rocks"></div>
+                        </div>
+                        <div id="tower">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="towerTop">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="towerTopTop">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id="headlights">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="svgSection" class="subSection">
+                <!-- The SVG Section-->
+                <svg id="mySVG" width="300" height="300">
+                    <!-- Background -->
+                    <g id="backgroundSVG">
+                        <defs>
+                            <linearGradient id="gradientSVG" gradientTransform="rotate(90)">
+                              <stop offset="50%" stop-color="rgb(0, 0, 53)" />
+                              <stop offset="100%" stop-color="rgb(240, 176, 57)" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="100%" height="30%" fill="url(#gradientSVG)"/>
+                        <rect x="0" y="30%" width="100%" height="70%" fill="rgb(40, 116, 91)"/>
+                        <rect x="0" y="80%" width="100%" height="20%" fill="grey"/>
+                        <rect x="0" y="80%" width="100%" height="3px" fill="rgb(41, 39, 39)"/>
+                    </g>
+                    <!-- Tower -->
+                    <g id="towerSVG" stroke="black">
+                        <path d="M122.5,270 L125,220 L175,220 L177.5,270 Z" fill="white"/>
+                        <path d="M125,220 L126.25,195 L173.75,195 L175,220 Z" fill="red"/>
+                        <path d="M126.25,195 L127.5,170 L172.5,170 L173.75,195" fill="white"/>
+                        <path d="M127.5,170 L128.75,145 L171.25,145 L172.5,170" fill="red"/>
+                        <path d="M128.75,145 L130,120 L170,120 L171.25,145" fill="white"/>
+                        <path d="M130,120 L125,112.5 L175,112.5 L170,120" fill="red"/>
+                    </g>
+                    <!-- Tower Top -->
+                    <g id="towerTopSVG" stroke="black">
+                        <rect x="130" y="80" width="40" height="32.5" fill="white"/>
+                        <g stroke-width="1.5">
+                            <path d="M125,105 L125,112.5"/>
+                            <path d="M132.14,105 L132.14,112.5"/>
+                            <path d="M139.28,105 L139.28,112.5"/>
+                            <path d="M146.43,105 L146.43,112.5"/>
+                            <path d="M153.57,105 L153.57,112.5"/>
+                            <path d="M160.71,105 L160.71,112.5"/>
+                            <path d="M167.86,105 L167.86,112.5"/>
+                            <path d="M175,105 L175,112.5"/>
+                            <path d="M125,105 L175,105"/>
+                        </g>
+                    </g>
+                    <!-- Tower Top Top -->
+                    <g id="towerTopTopSVG" stroke="black">
+                        <path d="M130,80 L150,60 L170,80" fill="red"/>
+                        <rect x="147.5" y="56.25" width="5" height="7.5" fill="black"/>
+                        <path d="M150,38.75 L150,56.25" stroke-width="1.5" fill="none"/>
+                    </g>
+                    <!-- Headlights -->
+                    <g id="headlightsSVG" fill="rgb(218,165,32)">
+                        <rect x="130" y="81" width="5" height="20" stroke="black" fill="rgb(218,165,32)"/>
+                        <rect x="165" y="81" width="5" height="20" stroke="black" fill="rgb(218,165,32)"/>
+                        <rect x="135" y="81" width="30" height="20" stroke="black" fill="rgb(218,165,32)"/>
+                        <g opacity="0.5">
+                            <g transform="translate(130,90)">
+                                <rect x="-250" y="-10" width="250" height="20"/>
+                            </g>
+                            <g transform="translate(170,90)">
+                                <rect x="0" y="-10" width="250" height="20"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div id="canvasSection" class="subSection">
+                <!-- The Canvas Section -->
+                <canvas id="myCanvas" width="600" height="600">
+                    HTML5 Canvas is not supported in your browser / device.
+                </canvas>
+            </div>
+            <div id="p5Section" class="subSection">
+                <!-- The p5 Section -->
+                <div id="myP5">
+
+                </div>
+            </div>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 17/50 (2023). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

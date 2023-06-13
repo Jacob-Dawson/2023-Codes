@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <title>Planet Ring Spin</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <svg id="mySVG">
+                <defs>
+                    <linearGradient id="Gradient1" x1="0" x2="0" y1="0" y2="1">
+                        <stop stop-color="#50C878" offset="0%"/>
+                        <stop stop-color="#228B22" offset="20%"/>
+                        <stop stop-color="#4F7942" offset="70%"/>
+                        <stop stop-color="#50C878" offset="100%"/>
+                    </linearGradient>
+                </defs>
+                <g transform="rotate(17.5,150,150)">
+                    <g transform="rotate(180,150,150)">
+                        <path id="backCurl" fill="none" stroke="lime" stroke-width="2" d="M80,150 A 40,12 0 0,0 220,150"/>
+                        <circle r="5" fill="grey">
+                            <animateMotion id="ani1" begin="0;ani2.end" dur="1s" path="M80,150 A 40,12 0 0,0 220,150"/>
+                        </circle>
+                    </g>
+                </g>
+                <g>
+                    <circle cx="150" cy="150" r="40" fill="url(#Gradient1)"></circle>
+                </g>
+                <g transform="rotate(17.5,150,150)">
+                    <path id="frontCurl" fill="none" stroke="lime" stroke-width="2" d="M80,150 A 40,12 0 0,0 220,150" />
+                    <circle r="5" fill="grey">
+                        <animateMotion id="ani2" begin="ani1.end" dur="1s" path="M80,150 A 40,12 0 0,0 220,150"/>
+                    </circle>
+                </g>
+            </svg>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 13/50 (2023). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>
