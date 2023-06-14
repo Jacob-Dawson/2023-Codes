@@ -1,4 +1,4 @@
-// js goes here
+// no js
 
 // https://upload.wikimedia.org/wikipedia/commons/b/be/Logan_Sapphire_SI.jpg
 

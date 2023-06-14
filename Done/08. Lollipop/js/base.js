@@ -94,8 +94,6 @@ function draw(t){
 
         context.restore();
 
-        //
-
     }
 
     context.restore();

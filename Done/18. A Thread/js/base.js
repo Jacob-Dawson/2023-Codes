@@ -70,7 +70,6 @@ function draw(time){
     context.lineJoin = "round";
 
     context.beginPath();
-    //context.moveTo(w/2,h/2);
 
     for(let i=0; i<threadPoints.length; i++){
 
@@ -212,8 +211,6 @@ function threadBuilder(amount,maxN){
         result.push(randNum);
 
     }
-
-    //console.log(result);
 
     return result;
 

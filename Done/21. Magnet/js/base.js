@@ -90,8 +90,6 @@ function draw(magX,magY){
         var pY = nails[i][1];
         var ang = nails[i][2];
 
-        //console.log(magX);
-
         if(movementFlag === true){
 
             movementFlag = false;
@@ -142,10 +140,6 @@ function draw(magX,magY){
         context.restore();
 
     }
-
-    // Paperclip?
-
-    
 
 }
 
