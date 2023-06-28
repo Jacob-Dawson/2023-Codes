@@ -1,0 +1,425 @@
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: green;
+
+}
+
+#mySection{
+
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* -- */
+
+#placeholder{
+
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+#road{
+
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 70px;
+    position: absolute;
+    background-color: rgb(32,32,32);
+
+}
+
+.laneLines{
+
+    animation: travel 2s linear infinite;
+
+}
+
+.laneLines > div{
+
+    background-color: white;
+    width: 80px;
+    height: 20px;
+    top: calc(50% - 10px);
+    position: absolute;
+
+}
+
+.laneLines > div:nth-child(1){
+
+    left: 0px;
+
+}
+
+.laneLines > div:nth-child(2){
+
+    left: 100px;
+
+}
+
+.laneLines > div:nth-child(3){
+
+    left: 200px;
+
+}
+
+.laneLines > div:nth-child(4){
+
+    left:-100px;
+
+}
+
+#van{
+
+    width: 100%;
+    height: 100%;
+    left: 10px;
+    position: absolute;
+
+}
+
+#topVan{
+
+    width: 155px;
+    height: 50px;
+    left: calc(50% - 70px);
+    top: 0;
+    position: absolute;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.5);
+
+}
+
+#topVanFrontOutline{
+
+    position: absolute;
+    left: -50px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 50px solid rgba(0,0,0,0.5);
+    border-left: 50px solid transparent;
+
+}
+
+#topVanFront{
+
+    position: absolute;
+    left: -47.5px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 50px solid white;
+    border-left: 50px solid transparent;
+    transform: scale(0.95);
+    transform-origin: 50% 50%;
+
+}
+
+#vanRoof{
+
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border: 1px solid rgba(0,0,0,0.5);
+
+}
+
+#window{
+
+    background-color: cyan;
+    width: 20px;
+    height: 30px;
+    top: 10px;
+    left: 0px;
+    position: absolute;
+    border: 1px solid rgba(0,0,0,0.5);
+
+}
+
+#windowFrontOutline{
+
+    position: absolute;
+    left: -32px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 32px solid rgba(0,0,0,0.5);
+    border-left: 32px solid transparent;
+
+}
+
+#windowFront{
+
+    position: absolute;
+    left: -30px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 32px solid cyan;
+    border-left: 32px solid transparent;
+    transform: scale(0.95);
+    transform-origin: 50% 50%;
+
+}
+
+#doorOutline{
+
+    position: absolute;
+    border-right: 1.5px solid rgba(0,0,0,0.5);
+    height: 100px;
+    top: -50px;
+    left: 80px;
+
+}
+
+.handles > div{
+
+    position: absolute;
+    background-color: black;
+    border-radius: 2px 2px 2px 2px;
+    width: 15px;
+    height: 7.5px;
+    top: 5px;
+
+}
+
+.handles > div:nth-child(1){
+
+    left: 60px;
+
+}
+
+.handles > div:nth-child(2){
+
+    left: 85px;
+
+}
+
+#midVan{
+
+    width: 210px;
+    height: 50px;
+    top: 50px;
+    left: calc(50% - 125px);
+    position: absolute;
+    background-color: white;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 12.5px 0px 0px 0px;
+
+}
+
+#frontLight{
+
+    width: 10px;
+    height: 20px;
+    top: 10px;
+    background-color: yellow;
+    position: absolute;
+
+}
+
+#frontBumper{   
+
+    width: 30px;
+    left: -5px;
+    height: 10px;
+    top: 40px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: black;
+    position: absolute;
+
+}
+
+#bottomBar{
+
+    width: 200px;
+    height: 5px;
+    top: 40px;
+    left: 10px;
+    background-color: black;
+    position: absolute;
+
+}
+
+#backLight{
+
+    width: 10px;
+    height: 20px;
+    top: 15px;
+    left: calc(100% - 10px);
+    background-color: red;
+    position: absolute;
+
+}
+
+#bottomBackLight{
+
+    width: 10px;
+    height: 10px;
+    top: 40px;
+    left: calc(100% - 10px);
+    background-color: red;
+    position: absolute;
+
+}
+
+#wheels{
+
+    top: 35px;
+    position: absolute;
+
+}
+
+#wheels > div{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+
+}
+
+#wheels > div:nth-child(1){
+
+    left: 20px;
+
+}
+
+#wheels > div:nth-child(2){
+
+    left: 150px;
+
+}
+
+#wheels > div > div{
+
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 5px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+#wheels > div > div > div{
+
+    width: 25px;
+    height: 25px;
+    left: 0.5px;
+    top: 0.5px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid darkgrey;
+
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(28, 68, 143);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(56, 3, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(56, 3, 56);
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 14px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+    box-sizing: border-box;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: rgb(56, 3, 56);
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+/* -- */
+
+@keyframes travel {
+
+    0%{
+
+        transform: translate(0px,35px);
+
+    }
+
+    100%{
+
+        transform: translate(100px,35px);
+
+    }
+    
+}
