@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Lotus Flower</title>
+    </head>
+    <body>
+        <section id="mySection">
+            <div id="infoSection" class="subSection">
+                <!-- Information about the drawing -->
+                <p></p>
+            </div>
+            <div id="selectionSection" class="subSection">
+                <!-- Select which drawing you want to see -->
+                <div>
+                    <p>Select which drawings you want to see</p><br>
+                </div>
+                <div id="selections">
+                    <label for="cssCheck">CSS</label>
+                    <input type="checkbox" id="cssCheck" checked/>
+                    <label for="svgCheck">SVG</label>
+                    <input type="checkbox" id="svgCheck" checked/>
+                    <label for="canvasCheck">Canvas</label>
+                    <input type="checkbox" id="canvasCheck" checked/>
+                    <label for="p5Check">p5</label>
+                    <input type="checkbox" id="p5Check" checked/>
+                </div>
+            </div>
+            <div id="cssSection" class="subSection">
+                <!-- The CSS Section -->
+                <div id="myCSS">
+                    <div id="placeholder">
+                        <div id="lillyPad"></div>
+                        <div id="lillyPadCover"></div>
+                        <div id="petals">
+                            <div class="petal"></div>
+                            <div class="petal"></div>
+                            <div class="petal"></div>
+                            <div class="petal"></div>
+                            <div class="petal"></div>
+                            <div class="petal"></div>
+                            <div class="petal"></div>
+                            <div class="petal"></div>
+                        </div>
+                        <div id="stamen"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="svgSection" class="subSection">
+                <!-- The SVG Section-->
+                <svg id="mySVG" width="300" height="300">
+                    <g id="mainSVG" transform="translate(150,150)">
+                        <!-- lilly pad -->
+                        <g id="lillyPadSVG" fill="green" stroke-lineJoin="round" stroke="rgba(0,0,0,0.35)">
+                            <circle cx="0" cy="0" r="67.5"/>
+                            <path fill="lightblue" stroke="none" d="M-40,-70 l80,0 l-40,35 Z"/>
+                        </g>
+                        <!-- Petals -->
+                        <g id="petalsSVG" fill="#FF69B4" stroke="rgba(0,0,0,0.35)">
+                            <g transform="rotate(90,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                            <g transform="rotate(270,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                            <g transform="rotate(45,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                            <g transform="rotate(225,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                            <g transform="rotate(0,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                            <g transform="rotate(180,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                            <g transform="rotate(135,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                            <g transform="rotate(315,0,0)">
+                                <ellipse cx="30" cy="0" rx="30" ry="15"></ellipse>
+                            </g>
+                        </g>
+                        <!-- Stamen -->
+                        <g id="stamenSVG" fill="yellow" stroke="rgba(0,0,0,0.35)">
+                            <circle cx="0" cy="0" r="15"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div id="canvasSection" class="subSection">
+                <!-- The Canvas Section -->
+                <canvas id="myCanvas" width="600" height="600">
+                    HTML5 Canvas is not supported in your browser / device.
+                </canvas>
+            </div>
+            <div id="p5Section" class="subSection">
+                <!-- The p5 Section -->
+                <div id="myP5">
+
+                </div>
+            </div>
+        </section>
+        <div id="footer">
+            <div id="footerContainer">
+                <div id="profilePic">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="theImg" src="https://blob.sololearn.com/avatars/3f731407-f00a-4256-87bb-c1730d8630fc.jpg"/></a>
+                </div>
+                <div id="sig">
+                    <p><a href="https://www.sololearn.com/Profile/100073">Jay</a> &copy; 34/50 (2023). Follow me:&nbsp;</p>
+                </div>
+                <div id="logos">
+                    <a href="https://www.sololearn.com/Profile/100073"><img id="slImg" src="https://blob.sololearn.com/avatars/sololearn.png"/></a>
+                    <a href="https://codepen.io/JDawson"><img id="cpenImg" src="https://res.cloudinary.com/css-tricks/images/w_600,h_600,c_fill/f_auto,q_auto/v1637703540/Button-White-Large/Button-White-Large-png?_i=AA"/></a>
+                </div>
+            </div>
+        </div>
+        <script src="js/base.js"></script>
+    </body>
+</html>

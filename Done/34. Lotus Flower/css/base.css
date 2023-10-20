@@ -1,0 +1,291 @@
+body{
+
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+
+}
+
+#mySection{
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.subSection{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* -- Selection Section --*/
+
+#selectionSection{
+
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+/* -- CSS */
+
+#myCSS{
+
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+    
+}
+
+#placeholder{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+#cssTitle{
+
+    left:0%;
+    top: -100%;
+    font-size: 20px;
+    position: relative;
+    text-align: left;
+
+}
+
+#placeholder > div {
+
+    position: absolute;
+
+}
+
+#lillyPad{
+
+    left: 82.5px;
+    top: 82.5px;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background-color: green;
+
+}
+
+#lillyPadCover{
+
+    width: 0;
+    height: 0;
+    left: calc(50% - 60px);
+    top: calc(50% - 67.5px);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 30px solid lightblue;
+
+}
+
+#petals{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+.petal{
+
+    background-color: #FF69B4;
+    left: 150px;
+    top: 135px;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px / 15px;
+    border: 1px solid rgba(0,0,0,0.35);
+    box-sizing: border-box;
+    position: absolute;
+    transform-origin: 0% 50%;
+
+}
+
+.petal:nth-of-type(1){
+
+    transform: rotate(90deg);
+
+}
+
+.petal:nth-of-type(2){
+
+    transform: rotate(270deg);
+
+}
+
+.petal:nth-of-type(3){
+
+    transform: rotate(45deg);
+
+}
+
+.petal:nth-of-type(4){
+
+    transform: rotate(225deg);
+
+}
+
+.petal:nth-of-type(5){
+
+    transform: rotate(0deg);
+
+}
+
+.petal:nth-of-type(6){
+
+    transform: rotate(180deg);
+
+}
+
+.petal:nth-of-type(7){
+
+    transform: rotate(135deg);
+
+}
+
+.petal:nth-of-type(8){
+
+    transform: rotate(315deg);
+
+}
+
+#stamen{
+
+    width: 30px;
+    height: 30px;
+    left: calc(50% - 15px);
+    top: calc(50% - 15px);
+    border-radius: 50%;
+    background-color: yellow;
+
+}
+
+/* -- SVG -*/
+
+#mySVG{
+
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+
+}
+
+/* -- Canvas */
+
+#myCanvas{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+/* -- p5 */
+
+#p5Section{
+
+    width: 100%;
+
+}
+
+#myP5{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+/* footer / sig */
+
+#footer{
+
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 50px;
+    background-color: rgb(28, 68, 143);
+    box-sizing: border-box;
+    border-top: 3px solid rgb(56, 3, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(56, 3, 56);
+    font-weight: bold;
+
+}
+
+#footerContainer{
+
+    width: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+#profilePic{
+
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+#theImg{
+
+    top: calc(50% - 14px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+    box-sizing: border-box;
+
+}
+
+#sig{
+
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    top: calc(50% - 15px);
+    margin-top: 3px;
+
+}
+
+#sig > p > a{
+
+    color: rgb(56, 3, 56);
+    text-decoration: none;
+
+}
+
+#slImg{
+
+    top: calc(50% - 15px);
+    position: relative;
+    border-radius: 50%;
+    max-width: 30px;
+    border: 1px solid rgb(56, 3, 56);
+
+}
+
+#cpenImg{
+
+    top: calc(50% - 15px);
+    position: absolute;
+    border-radius: 50%;
+    max-width: 30px;
+
+}
